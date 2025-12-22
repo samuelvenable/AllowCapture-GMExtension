@@ -1,0 +1,6 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"libWebMPlayer","order":1,"path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
+  ],
+}
