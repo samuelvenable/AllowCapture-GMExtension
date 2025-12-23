@@ -1,6 +1,8 @@
 /// @description And so it begins
 
 /*
+** Intended for use alongside the WindowCapture Extension, downloaded here:
+** https://github.com/samuelvenable/WindowCapture-GMExtension - (git clone)
 ** Ubuntu needs the following command executed to install the dependencies:
 ** sudo apt update && sudo apt install libsdl2-dev libvorbis-dev libvpx-dev
 */
