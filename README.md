@@ -9,13 +9,7 @@ Things that don't work right now, and fail silently when attempted:
 - Resizeable Window
 - Draw GUI Events
 
-Handle all your GUI drawing in the regular Draw Events instead of the Draw GUI Events. This is what older / legacy versions of GM had to do anyway.
-
-For your project, you will need to create a persistent controller object that will launch all of its events for the entire duration of your game.
-
-This means the object should be created in the first room your game opens in, and the controller object should not be destroyed or deactivated.
-
-There should be only one instance of the controller object at a time; when retarting the game, make sure no additional instances are created.
+Handle all your GUI drawing in the regular Draw Events instead of the Draw GUI Events. This is what older / legacy versions of GM had to do anyway. For your project, you will need to create a persistent controller object that will launch all of its events for the entire duration of your game. This means the object should be created in the first room your game opens in, and the controller object should not be destroyed or deactivated. There should be only one instance of the controller object at a time; when retarting the game, make sure no additional instances are created.
 
 In the Create Event code of your persistent controller object, use this snippet:
 ```gml
@@ -62,8 +56,6 @@ if (display_mouse_get_x() >= window_get_x() + 64 &&
 }
 ```
 
-It is not ideal for projects which want precise mouse collision detection on sprite masks, but it should not matter for most real-world use cases.
-
-Worst-case scenario, you will need to do a little more math in your code to acheive the same mouse detection GM would normally handle for you.
+It is not ideal for projects which want precise mouse collision detection on sprite masks, but it should not matter for most real-world use cases. Worst-case scenario, you will need to do a little more math in your code to acheive the same mouse detection GM would normally handle for you.
 
 Please report bugs on GitHub with an issue ticket or contact me on Discord for help. My username / handle on both websites is @samuelvenable.
