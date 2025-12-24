@@ -16,7 +16,6 @@ wchan = buffer_sizeof(buffer_u64);
 ```
 
 At the end of all your Draw Event code in your persistent controller object, use this snippet:
-
 ```gml
 wsurf = application_surface;
 if (surface_exists(wsurf)) {
