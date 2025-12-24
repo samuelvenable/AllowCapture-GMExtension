@@ -9,7 +9,7 @@ Things that don't work right now, and fail silently when attempted:
 - Resizeable Window
 - Draw GUI Events
 
-Handle all your GUI drawing in the regular Draw Events instead of the Draw GUI Events. This is what older / legacy versions of GM had to do anyway. For your project, you will need to create a persistent controller object that will launch all of its events for the entire duration of your game. This means the object should be created in the first room your game opens in, and the controller object should not be destroyed or deactivated. There should be only one instance of the controller object at a time; during the Game Restart Event, make sure no additional instances are created. In the Create Event code of your persistent controller object, use this snippet:
+Handle all your GUI drawing in the regular Draw Events instead of the Draw GUI Events. This is what older / legacy versions of GM had to do anyway. For your project, you will need to create a persistent controller object that will launch all of its events for the entire duration of your game. This means the object should be created in the first room your game opens in, and the controller object should not be destroyed or deactivated. There should be only one instance of the controller object at a time; during the Game Restart Event, make sure no additional instances are created, to prevent duplicate code execution. In the Create Event code of your persistent controller object, use this snippet:
 ```gml
 winex = -1; wbuff = -1; wsurf = -1;
 wchan = buffer_sizeof(buffer_u64);
