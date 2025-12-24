@@ -56,6 +56,4 @@ if (display_mouse_get_x() >= window_get_x() + 64 &&
 }
 ```
 
-It is not ideal for projects which want precise mouse collision detection on sprite masks, but it should not matter for most real-world use cases. Worst-case scenario, you will need to do a little more math in your code to acheive the same mouse detection GM would normally handle for you.
-
-Please report bugs on GitHub with an issue ticket or contact me on Discord for help. My username / handle on both websites is @samuelvenable.
+It is not ideal for projects which want precise mouse collision detection on sprite masks, but it should not matter for most real-world use cases. Worst-case scenario, you will need to do a little more math in your code to acheive the same mouse detection GM would normally handle for you. Please report bugs on GitHub with an issue ticket or contact me on Discord for help. My username / handle on both websites is @`samuelvenable`.
