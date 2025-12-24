@@ -42,7 +42,7 @@ if (_window != -1) WindowDestroy(_window);
 Mouse input does work, but you need to use the Global Mouse Events, with a few caveats:
 
 - You need to do all mouse position detection with `display_mouse_get_x()` and `display_mouse_get_y()`.
-- This means you can't detect mouse positions with `window_mouse_get_x()` and `window_mouse_get_y()`.
+- This means you can't detect mouse positions with `window_mouse_get_x()` or `window_mouse_get_y()`.
 - This means you can't detect mouse positions with `mouse_x` or `mouse_y`.
 - An example code snippet of a mouse hit-box detection code which works:
 ```gml
