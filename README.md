@@ -2,7 +2,7 @@
 
 Allows GameMaker Projects to Work with the [WindowCapture Extension](https://github.com/samuelvenable/WindowCapture-GMExtension)
 
-Things that don't work right now, and fail silently when attempted:
+Things that don't work right now, and will fail silently when attempted:
 
 - Fullscreen Window
 - Borderless Window
